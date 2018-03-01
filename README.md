@@ -5,6 +5,19 @@ Repository contains exercises and misc Docker examples.
 # Important command examples
 
 ```
+docker                                            # List Docker CLI commands
+docker container --help
+
+docker --version                                  # Display Docker version and info
+docker version
+docker info
+
+docker run hello-world                            # Excecute Docker image
+docker image ls                                   # List Docker images
+docker container ls                               # List Docker containers (running, all, all in quiet mode)
+docker container ls --all
+docker container ls -a -q
+
 docker build -t myfirstdocker .                   # Create image using this directory's Dockerfile
 docker run -p 4000:80 myfirstdocker               # Run "myfirstdocker" mapping port 4000 to 80
 docker run -d -p 4000:80 myfirstdocker            # Same thing, but in detached mode
