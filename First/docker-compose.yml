@@ -1,8 +1,8 @@
 version: "3"
 services:
-  web:
-    # replace username/repo:tag with your name and image details
-    image: username/repo:tag
+  web: # Service name will be: 'web'.
+    image: username/repo:tag # We will pull the image.
+                             # Replace username/repo:tag with your name and image details.
     deploy:
       replicas: 5
       resources:
