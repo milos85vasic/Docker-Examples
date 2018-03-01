@@ -4,11 +4,11 @@ services:
     image: username/repo:tag # We will pull the image.
                              # Replace username/repo:tag with your name and image details.
     deploy:
-      replicas: 5
+      replicas: 5 # Run 5 instances of this service
       resources:
         limits:
-          cpus: "0.1"
-          memory: 50M
+          cpus: "0.1" # Limit to max 10% of CPU power (across all cores).
+          memory: 50M # Limit to 50 MB of ram.
       restart_policy:
         condition: on-failure
     ports:
