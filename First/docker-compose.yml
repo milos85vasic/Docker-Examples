@@ -10,9 +10,9 @@ services:
           cpus: "0.1" # Limit to max 10% of CPU power (across all cores).
           memory: 50M # Limit to 50 MB of ram.
       restart_policy:
-        condition: on-failure
+        condition: on-failure # Restart containers if one of them fails.
     ports:
-      - "80:80"
+      - "80:80" # Map host port 80 to service's port 80.
     networks:
       - webnet
 networks:
