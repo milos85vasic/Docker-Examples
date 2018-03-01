@@ -16,4 +16,4 @@ services:
     networks:
       - webnet
 networks:
-  webnet:
+  webnet: # Define the webnet network with the default settings (which is a load-balanced overlay network).
