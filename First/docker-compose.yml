@@ -15,5 +15,16 @@ services:
       - "80:80" # Map host port 80 to service's port 80.
     networks:
       - webnet
+  visualizer:
+      image: dockersamples/visualizer:stable
+      ports:
+        - "8080:8080"
+      volumes:
+        - "/var/run/docker.sock:/var/run/docker.sock"
+      deploy:
+        placement:
+          constraints: [node.role == manager]
+      networks:
+        - webnet
 networks:
   webnet: # Define the webnet network with the default settings (which is a load-balanced overlay network).
