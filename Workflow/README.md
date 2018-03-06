@@ -1,10 +1,11 @@
 # Simple Docker workflow
 
-TBD.
+This document illustrates simple Docker workflow for remote deployment.
 
 # Create image
 
-TBD.
+- Write Dockerfile
+- 
 
 # Initialize swarm and prepare it for remote deployment
 
