@@ -1,4 +1,12 @@
-# How to initialize swarm and preprare it for remote deployment
+# Simple Docker workflow
+
+TBD.
+
+# Create image
+
+TBD.
+
+# Initialize swarm and prepare it for remote deployment
 
 On remote host:
 
@@ -18,5 +26,9 @@ $ docker run -ti --rm -v /var/run/docker.sock:/var/run/docker.sock dockercloud/r
 ```
 
 On development machine:
+
+TBD.
+
+# Deploy
 
 TBD.
