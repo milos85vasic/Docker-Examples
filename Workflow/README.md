@@ -7,19 +7,26 @@ This document illustrates simple Docker workflow for remote deployment.
 - Write Dockerfile(s)
 - Create Docker image(s) from Dockerfile(s):
     + Build image:
-    ```
-    docker build -t imagename .
-    ```
+        ```
+            $ docker build -t imagename .
+        ```
     + Tag your image:
-    ```
-    docker tag image username/repository:tag
-    ```
+        ```
+           $ docker tag image username/repository:tag
+        ```
     + Publish your image:
-    ```
-    docker push username/repository:tag
-    ```
-- Create docker stack from Docker images(s) and other components we depend on
-- TBD.
+        ```
+            $ docker push username/repository:tag
+        ```
+- Create docker stack from Docker images(s) and other components we depend on (docker-compose.yml)
+- Init swarm:
+```
+$ docker swarm init
+```
+- Deploy stack:
+```
+$ docker stack deploy -c docker-compose.yml imagename
+```
 
 # Initialize swarm and prepare it for remote deployment
 
