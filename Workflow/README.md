@@ -5,7 +5,9 @@ This document illustrates simple Docker workflow for remote deployment.
 # Create image
 
 - Write Dockerfile
-- 
+- TBD. (Docker Stack)
+- Create Docker image
+- TBD.
 
 # Initialize swarm and prepare it for remote deployment
 
