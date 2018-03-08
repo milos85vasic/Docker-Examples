@@ -1,6 +1,6 @@
 # Simple Docker workflow
 
-This document illustrates simple Docker workflow for remote deployment.
+This document illustrates simple Docker workflow for services deployment.
 
 # Create image
 
