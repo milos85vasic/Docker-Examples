@@ -4,6 +4,36 @@ This document illustrates simple Docker workflow for services deployment.
 
 # Create image
 
+- Create Docker volumes:
+
+    + Create a new volume:
+    ```
+        docker volume create volume_name
+    ```
+    + List volumes:
+    ```
+        docker volume ls
+    ```
+    + Inspect it:
+    ```
+        docker volume inspect volume_name
+    ```
+    + Write down its mount path from JSON example:
+    ```json
+        [
+            {
+                "CreatedAt": "2018-03-12T16:56:26Z",
+                "Driver": "local",
+                "Labels": {},
+                "Mountpoint": "/var/lib/docker/volumes/assets/_data",
+                "Name": "assets",
+                "Options": {},
+                "Scope": "local"
+            }
+        ]
+
+    ```   
+
 - Write Dockerfile(s)
 - Create Docker image(s) from Dockerfile(s):
     
